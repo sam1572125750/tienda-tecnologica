@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/detalle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="search">
+      <div class="logo">
+        <a href="duplicado.html"><img src="./icons/tienda.jpg" width="218" alt="Logo store" /></a>
+      </div>
+      <div class="form">
+        <form>
+          <input id="buscador" type="text" placeholder="Search" />
+        </form>
+      </div>
+      <div class="social">
+        <div class="social-icons">
+          <div class="cart-icon">
+          <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+          <div class="cart-icon">
+          <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+          <div class="cart-icon">
+          <div class="cart-notification">
+            <span class="notification-count">0</span>
+            <i class="fa fa-bell"></i>
+          </div>
+        </div>
+       
+          <div class="cart-icon" onclick="redirectToCardPage()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h8.64a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </div>
+        
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="nav" id="nav">
+      <!-- <ul>
+        <li><a href="#">Ofertas de la semana</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="#">Marcas</a></li> 
+      </ul> -->
+    </div>
+  
+  </header>
+
+      <main>
+        <div class="container">
+          <div  id="detalle-final-renderizado" class="columns-container">
+            
+            <div class="product-images-block">
+              <div class="thumbnail-container">
+                <img src="../imagenes_main/counter.webp" alt="Descripción de la imagen 1" />
+              </div>
+              <div class="thumbnail-container">
+                <img src="../imagenes_main/gamer.webp" alt="Descripción de la imagen 2" />
+              </div>
+              <img class="main-image" src="../imagenes_main/counter.webp" alt="Descripción de la imagen 5" />
+             
+              
+             
+            </div>
+    
+            <div class="product-description-block">
+              <h1 class="title">macbook</h1>
+              <form class="selector">
+                <fieldset>
+                  <label class="label" for="color">Color</label>
+                  <select type="text" placeholder="Selecciona un color">
+                    <option value="negro-espacial">Negro espacial</option>
+                    <option value="gris-espacial">Gris espacial</option>
+                  </select>
+                </fieldset>
+              </form>
+              <div class="descripcion">
+                <h1>Descripcion:</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  facilis, et deleniti atque dicta commodi nulla temporibus
+                  excepturi cum quis saepe necessitatibus totam architecto quas!
+                  Dignissimos magni ad quo pariatur?
+                </p>
+              </div>
+            </div>
+            <div class="checkout-container">
+              <!-- Los elementos del checkout irán aquí -->
+              <span class="checkout-total-label">Total:</span>
+              <h2 class="checkout-total-price">$152.400</h2>
+              <p class="checkout-description">
+                Incluye impuesto PAIS y percepción AFIP. Podés recuperar AR$ 50711
+                haciendo la solicitud en AFIP.
+              </p>
+              <ul class="checkout-policy-list">
+                <li>
+                  <span class="policy-icon"
+                    ><img src="./icons/truck.png" alt="Truck"
+                  /></span>
+                  <span class="policy-desc"
+                    >Agrega el producto al carrito para conocer los costos de
+                    envío</span
+                  >
+                </li>
+                <li>
+                  <span class="policy-icon"
+                    ><img src="./icons/plane.png" alt="Plane"
+                  /></span>
+                  <span class="policy-desc"
+                    >Recibí aproximadamente entre 10 y 15 días hábiles,
+                    seleccionando envío normal</span
+                  >
+                </li>
+              </ul>
+              <div class="checkout-process">
+                <div class="top">
+                  <input type="number" value="1" />
+                  <button class="btn-primary">Comprar</button>
+                </div>
+                <div class="bottom">
+                  <button class="btn-outline">Añadir al Carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sales"> 
+           <h2>Productos destacados</h2>
+          <div class="sales-block">
+            
+            <div class="product-container" >
+              <article class="product-card">
+                <a href="detalles.html">
+                <img class="product-img" src="../imagenes_main/telefono.jpg" alt="Macbook Pro" />
+                <div class="product-info">
+                  <h1>1</h1>
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.000</span>
+                    <span class="discount">50% Off</span>
+                  </div>
+                  <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+                </div>
+              </a>
+                <div class="botones-compras">
+                  <button class="btn-comp">Carrito</button>
+                </div>
+                
+              </article>
+            </div>
+            <div class="product-container">
+              <article class="product-card">
+                <a href="detalles.html">
+                <img class="product-img" src="../imagenes_main/counter.webp" alt="Macbook Pro" />
+                <div class="product-info">
+                  <h1>1</h1>
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.000</span>
+                    <span class="discount">50% Off</span>
+                  </div>
+                  <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+                </div>
+              </a>
+                <div class="botones-compras">
+                  <button class="btn-comp">Carrito</button>
+                </div>
+                
+              </article>
+            </div>
+            <div class="product-container">
+              <article class="product-card">
+                <a href="detalles.html">
+                <img class="product-img" src="../imagenes_main/acer.webp" alt="Macbook Pro" />
+                <div class="product-info">
+                  <h1>1</h1>
+                  <span class="product-title">Macbook Pro 15'4</span>
+                  <span class="product-description">Space Gray</span>
+                  <div class="product-price-block">
+                    <span class="price">$750.000</span>
+                    <span class="discount">50% Off</span>
+                  </div>
+                  <div class="product-tax-policy">Incluye impuesto País y percepción AFIP</div>
+                </div>
+              </a>
+                <div class="botones-compras">
+                  <button class="btn-comp">Carrito</button>
+                </div>
+                
+              </article>
+            </div>
+          </div>
+        </div> 
+        </div>
+      </main>
+      
+      <footer>
+        <div class="container-footer" >
+          <div class="columns-container" id="footer">
+        
+          </div>
+          <div class="copyright">Curso de HTML + CSS 2023</div>
+        </div>
+      </footer>
+      <script src="./js/notificacion.js"></script>
+      <script src="./js/menu-nav.js"></script>
+      <script src="./js/layout.js"></script>
+      <script src="./js/productCards.js"></script>
+      <script src="./js/filterProducts.js"></script>
+      <script src="./js/productDetail.js"></script>
+      <script src="./js/card.js"></script>
+      <script src="./js/total.js"></script>
+</body>
+</html>

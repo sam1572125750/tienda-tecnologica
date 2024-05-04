@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="search">
+      <div class="logo">
+        <a href="#"><img src="./icons/tienda.jpg" width="218" alt="Logo store" /></a>
+      </div>
+      <div class="form">
+        <form>
+          <input id="buscador" type="text" placeholder="Search" />
+        </form>
+      </div>
+      <div class="social">
+        <div class="social-icons">
+          <div class="cart-icon">
+          <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+          <div class="cart-icon">
+          <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+          <div class="cart-icon">
+          <div class="cart-notification">
+            <span class="notification-count">0</span>
+            <i class="fa fa-bell"></i>
+          </div>
+        </div>
+          <div class="cart-icon" onclick="redirectToCardPage()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h8.64a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+        </div>
+        
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="nav" id="nav">
+      <!-- <ul>
+        <li><a href="#">Ofertas de la semana</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="#">Marcas</a></li> 
+      </ul> -->
+    </div>
+  
+  </header>
+      <section id="hero">
+        <div class="container-hero">
+          <div class="title-container">
+            <span>tecnología</span>
+            <span>renovada</span>
+          </div>
+        </div>
+      </section>
+      <main>
+        <div class="container" id="product-container">
+  
+        </div>
+      </main>
+      
+      <footer>
+        <div class="container-footer" >
+          <div class="columns-container" id="footer">
+        
+          </div>
+          <div class="copyright">Curso de HTML + CSS 2023</div>
+        </div>
+      </footer>
+      <script src="./js/notificacion.js"></script>
+      <script src="./js/menu-nav.js"></script>
+      <script src="./js/layout.js"></script>
+      <script src="./js/productCards.js"></script>
+      <script src="./js/filterProducts.js"></script>
+      <script src="./js/productDetail.js"></script>
+      <script src="./js/card.js"></script>
+      <script src="./js/total.js"></script>
+</body>
+</html>
